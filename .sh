@@ -23,7 +23,59 @@ clear
 apt-get install stunnel4 -y
 clear
 yum install stunnel4 -y
+clear#######"
+echo -e "\033[1;33m- - - - -> \033[01;34mScript Configure the server to use SSL / TLS Stunnel4"
+echo -e "\033[1;33m #################"
+echo -e "\033[1;31mC A N A L   SOLOLENGUAJEMAQUINA"
+sleep 2
+
+apt-get update -y
 clear
+yum update -y
+apt-get install openssh-server -y
+clear
+apt-get install curl -y
+clear
+yum install openssh-server -y
+clear
+apt-get install openssh-client -y
+clear
+yum install openssh-client -y
+clear
+apt-get install stunnel4 -y
+clear
+yum install stunnel4 -y
+clear
+apt-get install stunnel -y
+clear
+yum install stunnel -y
+clear
+
+echo -e "\033[1;31mC A P I T U R A N D O  I P"
+ip=$(curl https://api.ipify.org/)
+echo $ip
+clear
+
+echo -e "\033[1;33m ######################################"
+echo -e "\033[1;31mSOLOLENGUAJEMAQUINA"
+echo -e "\033[1;33m #################"
+echo -e "\033[1;31mSOLOLENGUAJEMAQUINA"
+echo -e "\033[1;33m ######################################"
+sleep 1
+
+echo -e "\033[1;33m ######################################"
+echo -e "\033[1;31mSCRIPT SSL POR SLM OFICIAL"
+echo -e "\033[1;33m #################"
+echo -e "\033[1;31mCONFIGURANDO ESPERA....."
+echo -e "\033[1;33m ######################################"
+sleep 1
+openssl genrsa 2048 > stunnel.key
+openssl req -new -key stunnel.key -x509 -days 1000 -out stunnel.crt
+
+echo -e "\033[1;33m ######################################"
+echo -e "\033[1;31mC R I A N D O  U M A  N O V A  C O N F I G U R A C A O"
+echo -e "\033[1;33m #################"
+echo -e "\033[1;31mC R E 
 apt-get install stunnel -y
 clear
 yum install stunnel -y
